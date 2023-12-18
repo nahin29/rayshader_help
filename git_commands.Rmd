@@ -1,0 +1,114 @@
+---
+title: "git commands"
+author: "Md Nahin Alam"
+date: "2023-12-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git init
+Reinitialized existing Git repository in G:/rayshader/rayshader_help/.git/
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git add .
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git commit -m "Initial commit"
+[master 0e37d0a] Initial commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git remote add origin <repository-url>
+bash: syntax error near unexpected token `newline'
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git remote add origin https://github.com/nahin29/rayshader_help.git
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nahin29/rayshader_help.git/'
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ ^C
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ ^C
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 758 bytes | 758.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/nahin29/rayshader_help/pull/new/master
+remote:
+To https://github.com/nahin29/rayshader_help.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git add rayshader_installation_help.R
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git commit -m "Add filename to the repository"
+[master 4ebef5b] Add filename to the repository
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git commit -m "Add filename to the repository"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git commit -m "rayshader_help_url"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/nahin29/rayshader_help.git
+   0e37d0a..4ebef5b  master -> master
+
+nahin@LAPTOP-K1C7J0DG MINGW64 /g/rayshader/rayshader_help (master)
+$
+
+
